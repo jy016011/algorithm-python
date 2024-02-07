@@ -59,3 +59,15 @@
         else:
             stack.append(number)
     ```
+    
+- `split()` 과 `split(" ")`의 차이
+  - `split()`은 모든 공백을 하나로 보고 처리함.
+  - `split(" ")`은 공백 1개를 각각의 공백으로 따로 처리
+  - 예시
+  - ```python
+    string = "word1 word2  word3    word4     "
+    print(string.split())
+    > ['word1', 'word2', 'word3', 'word4']
+    print(string.split(" "))
+    > ['word1', 'word2', '', 'word3', '', '', 'word4', '', '', '', '']
+    ```
