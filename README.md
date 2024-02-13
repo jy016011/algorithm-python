@@ -71,3 +71,20 @@
     print(string.split(" "))
     > ['word1', 'word2', '', 'word3', '', '', 'word4', '', '', '', '']
     ```
+    
+- `collections.Counter()`: 인자로 받은 리스트의 각 요소의 갯수를 세어, 딕셔너리 형태의 `Couter` 자료형으로 반환
+  - ```python
+    import collections
+    list = ['mislav', 'stanko', 'mislav', 'ana']
+    collections.Counter(list)
+    >>> Counter({'mislav': 2, 'stanko': 1, 'ana': 1})
+    ```
+  - 딕셔너리 자료형 처럼 키로 값 찾기 및 갱신 가능
+  - 다음과 같이 `Counter` 객체 간의 산술 연산도 가능
+  - ```python
+    counter1 = Counter(["A", "A", "B"])
+    counter2 = Counter(["A", "B", "B"])
+    counter1 + counter2
+    >>> Counter({'A': 3, 'B': 3})
+    ```
+    - 뺄셈시 결과 값(요소의 갯수)이 0이하의 수가 나온 경우에는 결과 카운터 객체에서 제외가 됨.
