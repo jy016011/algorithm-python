@@ -1,5 +1,9 @@
 from collections import deque
 
+'''
+프로그래머스 코딩테스트 고득점 kit 완전탐색, 문제 2번: 모의고사
+'''
+
 
 def solution(answers):
     first = deque([1, 2, 3, 4, 5])

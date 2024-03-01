@@ -1,3 +1,8 @@
+'''
+프로그래머스 코딩테스트 고득점 kit 완전탐색, 문제 1번: 최소직사각형
+'''
+
+
 def solution(sizes):
     max_vals = []
     min_vals = []

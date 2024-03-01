@@ -1,6 +1,10 @@
 import math
 from itertools import permutations
 
+'''
+프로그래머스 코딩테스트 고득점 kit 완전탐색, 문제 3번: 소수 찾기
+'''
+
 
 def solution(numbers):
     answer = 0
