@@ -1,7 +1,12 @@
+'''
+프로그래머스 코딩테스트 고득점 kit 해시, 문제 5번: 베스트앨범
+'''
+
+
 def solution(genres, plays):
     playtime_of_each_genre = {}
     playlist_of_each_genre = {}
-    for i in range(len(genres)) :
+    for i in range(len(genres)):
         genre = genres[i]
         play = plays[i]
         if genre in playtime_of_each_genre.keys():
@@ -29,8 +34,8 @@ def solution(genres, plays):
             answer.append(play[1])
             count += 1
 
-
     return answer
+
 
 # answer: [4, 1, 3, 0]
 print(solution(["classic", "pop", "classic", "classic", "pop"], [500, 600, 150, 800, 2500]))
