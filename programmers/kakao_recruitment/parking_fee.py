@@ -1,4 +1,4 @@
-import math
+from math import ceil
 
 
 def solution(fees, records):
@@ -22,7 +22,7 @@ def solution(fees, records):
         if time <= limit_time:
             answer.append(base_fee)
         else:
-            answer.append(base_fee + math.ceil((time - limit_time) / unit_time) * unit_fee)
+            answer.append(base_fee + ceil((time - limit_time) / unit_time) * unit_fee)
     return answer
 
 
